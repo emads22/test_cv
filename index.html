@@ -1,0 +1,105 @@
+<!DOCTYPE html> <!-- html 5 made much easier than html 4, this template is the same always -->
+<html lang="en" dir="ltr">
+<!-- we can skip the lang="en", everything between these 2 tags is html code -->
+
+<head>
+  <!-- the head with infos about the web page -->
+  <meta charset="utf-8">
+  <!-- character set to utf-8 encoding system (standard) for all the text inside the webpage by the element meta -->
+  <title>Emad's Personal Site</title> <!--  title on the top of the page -->
+</head>
+
+<body>
+  <!-- the body -->
+  <table cellspacing="30">
+    <!-- add spacing between cells/columns and value in percentage -->
+    <tr>
+      <!-- used this table here to lay out picture on left and bio on right and thats html way, in css is different -->
+      <td><img src="wolf.jpg" alt="wolf picture"> <!-- i can use url address of a pic instead of a local path file (same directory of index or else) -->
+      </td>
+      <td>
+        <h1>Emad Saab</h1>
+        <p><em>This is my <strong>job title</strong> here</em></p>
+        <p>"This is a brief introduction about me and what I do in life. My hobbies and my interests, my visions and my goals"</p>
+      </td>
+    </tr>
+  </table>
+  <hr>
+  <h3>Education</h3>
+  <ul>
+    <!-- unordered lists -->
+    <li>My elementary school</li>
+    <li>My high school</li>
+  </ul>
+  <hr>
+  <h3>Work Experience</h3>
+  <table border="1">
+    <!-- usually border and other table attributes are deprected cz styling is for css only  -->
+    <thead>
+      <!-- if we dont group the table sectionss (head,body,footer) he browserstill knows how to group them using the elements like <th>
+                    But its better to put grouping in case we want to select and isolate the sections and style it differently or have different functions. -->
+      <tr>
+        <!-- table row -->
+        <th>Year</th> <!-- table header, or column title -->
+        <th>Work</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2009</td> <!-- table data, individual cell -->
+        <td>Bonjus</td>
+      </tr>
+      <tr>
+        <td>2013</td>
+        <td>Bookshop</td>
+      </tr>
+      <tr>
+        <td>2014</td>
+        <td>Restaurant</td>
+      </tr>
+      <tr>
+        <td>2016</td>
+        <td>Hotel</td>
+      </tr>
+    </tbody>
+    <tfoot>
+    </tfoot>
+  </table>
+  <hr>
+  <h3>Skills</h3>
+  <table border="1">
+    <!-- used nested table here to display every 2 skills and their stars in a column -->
+    <tr>
+      <td>
+        <table cellspacing="10">
+          <tr>
+            <td>Coding</td>
+            <td>⭐⭐⭐</td>
+          </tr>
+          <tr>
+            <td>Crafts</td>
+            <td>⭐⭐⭐⭐⭐</td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table cellspacing="10">
+          <tr>
+            <td>Commuication</td>
+            <td>⭐⭐⭐⭐</td>
+          </tr>
+          <tr>
+            <td>Hand Balancing</td>
+            <td>⭐⭐</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <hr>
+  <a href="hobbies.html">My Hobbies</a> <!-- in this case the hyperlink is another page created in directory instead of url -->
+  <a href="contact_details.html">Contact me</a>
+  <hr>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My contact details</title>
+</head>
+
+<body>
+  <h2>My contact details</h2>
+  <p>My Address</p>
+  <p>11598745632154</p>
+  <p>emads@email.com</p>
+<hr>
+<form action="mailto:testmail.day32g@gmail.com" method="post" enctype="text/plain">  <!-- form element comes wth many elements, most imortant are label and input -->
+  <!-- when we click submit it takes us to index.html cz its set in action attribute, so we set where the submit button takes us
+  and the method is post so it transfers all the input fields entered by user to the webpage in action. so we set a new action better
+  than homepage which is email address (we add mailto:) so all infos are sent to that email.(it opens a mail app to send it)
+  enctype is set to text/plain that way when it launches the mail app we dnt get signs and numbers (encodng) but normal email plain text instead -->
+  <label>Your Name:</label>   <!-- label text -->
+  <input type="text" name="yourName" value=""><br>  <!-- input is self closing tag and has many types. here text input, type is text. -->
+  <label>Your Email:</label>   <!-- it wont let us enter text without @ and a domain .com -->
+  <input type="email" name="yourEmail" value=""><br>  <!-- we put a name to each input to name the variable and data that will be sent using post method to action destination -->
+  <label>Your Message:</label><br>
+  <textarea name="yourMessage" rows="4" cols="30"></textarea><br>  <!-- textarea is self closing tage for writing a paragraph and we set the columns (how wide)
+                                                                      and rows (how tall) as default. it can be expanded in the web webpage -->
+  <input type="submit" name="">  <!-- submit button for input, type is submit for input -->
+<!--
+  <input type="color" name="" value=""> < color picker example > <br>
+
+  <label>Do you want to sign up to email list? </label>
+  <input type="checkbox" name="" value=""> < checkbox (check or uncheck) example > <br>
+  <label>Your password:</label>
+  <input type="password" name="" value="">  < password input example, text is masked >
+  <input type="submit" name="">
+-->
+</form>
+
+</body>
+
+</html>
